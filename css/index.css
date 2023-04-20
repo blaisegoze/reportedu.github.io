@@ -1,0 +1,341 @@
+/* Hero Image */
+.hero{
+    height: 100vh;
+}
+
+.hero_image {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
+    height: 170vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+}
+
+.hero_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+}
+
+.hero_title{
+    font-size: 150px;
+    line-height: 122px;
+    text-transform: uppercase;
+}
+
+.hero_sub_title{
+    font-size: 32px;
+    letter-spacing: 4.4px;
+    padding-left: 8px;
+}
+
+@media screen and (max-width:1000px){
+    .hero_title{
+        font-size: 55px;
+        line-height: 46px;
+    }
+    
+    .hero_sub_title{
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        padding-left: 3px;
+    }
+}
+
+
+/* /////////////////////////// */
+
+
+/* Incident */
+#incident{
+    background-color: hsl(0, 0%, 90%);
+    height: 100vh;
+    position: relative;
+}
+
+.incident_img{
+
+}
+
+.incident_text{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.incident_title{
+    font-size: 30px;
+}
+
+.incident_sub_title{
+    font-size: 14px;
+}
+
+
+/* /////////////////////////// */
+
+
+/* Person */
+#person{
+    background-color: hsl(0, 0%, 60%);
+    height: 100vh;
+    position: relative;
+}
+
+.person_img{
+
+}
+
+.person_text{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+}
+
+.person_title{
+    font-size: 30px;
+}
+
+.person_sub_title{
+    font-size: 14px;
+}
+
+
+/* /////////////////////////// */
+
+
+/* Vehicle */
+#vehicle{
+    background-color: hsl(0, 0%, 90%);
+    height: 100vh;
+    position: relative;
+}
+
+.vehicle_img{
+
+}
+
+.vehicle_text{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+}
+
+.vehicle_title{
+    font-size: 30px;
+}
+
+.vehicle_sub_title{
+    font-size: 14px;
+}
+
+
+/* /////////////////////////// */
+
+
+/* Property */
+#property{
+    background-color: hsl(0, 0%, 60%);
+    height: 100vh;
+    position: relative;
+}
+
+.property_img{
+
+}
+
+.property_text{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+}
+
+.property_title{
+    font-size: 30px;
+}
+
+.property_sub_title{
+    font-size: 14px;
+}
+
+
+/* /////////////////////////// */
+
+
+/* Modus Operandi */
+#modus_operandi{
+    background-color: hsl(0, 0%, 90%);
+    height: 100vh;
+    position: relative;
+}
+
+.modus_operandi_img{
+
+}
+
+.modus_operandi_text{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.modus_operandi_title{
+    font-size: 30px;
+}
+
+.modus_operandi_sub_title{
+    font-size: 14px;
+}
+
+
+/* /////////////////////////// */
+
+
+/* Narrative */
+#narrative{
+    background-color: hsl(0, 0%, 60%);
+    height: 100vh;
+    position: relative;
+}
+
+.narrative_img{
+
+}
+
+.narrative_text{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.narrative_title{
+    font-size: 30px;
+}
+
+.narrative_sub_title{
+    font-size: 14px;
+}
+
+
+/* /////////////////////////// */
+
+
+/* Forms & Inputs */
+form {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 0 20px;
+}
+
+form * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.form_block{
+    display: block;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.form_block_subs{
+    display: block;
+    width: 100%;
+}
+
+.form_block_subs label{
+    margin: 10px;
+}
+
+.form_block_sub{
+    display: flex;
+}
+
+.form_block_sub input{
+    margin: 10px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=number], select, textarea {
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    resize: vertical;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: white;
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 300;
+}
+  
+  /* Style the submit button with a specific background color etc */
+  .btn_submit {
+    background-color: #338fba;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  .btn_submit:hover {
+    background-color: #0071a5;
+}
+
+@media screen and (min-width:980px){
+    form{
+        min-width: 980px;
+        max-width: 980px;
+    }
+
+    .person_text, .vehicle_text{
+        width: auto;
+    }
+}
