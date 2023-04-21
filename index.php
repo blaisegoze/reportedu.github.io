@@ -72,6 +72,10 @@
             <input type="text" id="report_date" name="report_date" placeholder="Report Date" required>
           </div>
           <div class="form_block">
+            <label for="message">Report Time</label>
+            <input type="text" id="report_time" name="report_time" placeholder="Report Time" required>
+          </div>
+          <div class="form_block">
             <label for="message">Nature of Call</label>
             <input type="text" id="nat_call" name="nat_call" placeholder="Nature of Call" required>
           </div>
@@ -84,32 +88,28 @@
             <input type="text" id="inc_city" name="inc_city" placeholder="City" required>
           </div>
           <div class="form_block">
-            <label for="message">Involvement</label>
-            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+            <label for="message">State</label>
+            <input type="text" id="inc_state" name="inc_state" placeholder="State" required>
           </div>
           <div class="form_block">
-            <label for="message">Involvement</label>
-            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+            <label for="message">Zip Code</label>
+            <input type="text" id="inc_zip" name="inc_zip" placeholder="Zip Code" required>
           </div>
           <div class="form_block">
-            <label for="message">Involvement</label>
-            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+            <label for="message">From Date</label>
+            <input type="text" id="from_date" name="from_date" placeholder="From Date" required>
           </div>
           <div class="form_block">
-            <label for="message">Involvement</label>
-            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+            <label for="message">From Time</label>
+            <input type="text" id="from_time" name="from_time" placeholder="From Time" required>
           </div>
           <div class="form_block">
-            <label for="message">Involvement</label>
-            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+            <label for="message">To Date</label>
+            <input type="text" id="to_date" name="to_date" placeholder="To Date" required>
           </div>
           <div class="form_block">
-            <label for="message">Involvement</label>
-            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
-          </div>
-          <div class="form_block">
-            <label for="message">Involvement</label>
-            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+            <label for="message">To Time</label>
+            <input type="text" id="to_time" name="to_time" placeholder="To Time" required>
           </div>
         </form>
     </div>
