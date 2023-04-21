@@ -13,16 +13,16 @@
 
 <body>
     <div class="background">
-        <form>
+        <form action="student_signup.php" method="post">
             <h3>Student</h3>
 
             <label for="username">Username</label>
-            <input type="text" placeholder="Email" id="username">
+            <input type="text" placeholder="Email" id="username" required>
 
             <label for="password">Password</label>
-            <input type="password" placeholder="Password" id="password">
+            <input type="password" placeholder="Password" id="password" required>
 
-            <button><a href="/index.php">Sign In</a></button>
+            <button type="submit" value="Submit">Sign In</button>
         </form>
     </div>
 </body>
