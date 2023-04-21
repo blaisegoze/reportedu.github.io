@@ -313,7 +313,7 @@
       <h1 class="modus_operandi_title">Modus Operandi</h1>
       <p class="modus_operandi_sub_title">...</p>
 
-                <form action="action_page.php" method="post">
+          <form action="action_page.php" method="post">
             <div class="form_block">
               <label for="message">Involvement</label>
               <input type="text" id="involvement_prop" name="involvement_prop" placeholder="Involvement" required>
