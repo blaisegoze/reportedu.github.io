@@ -297,7 +297,7 @@
             </div>
             <div class="form_block">
               <label for="message">Description</label>
-              <input type="text" id="description" name="description" placeholder="Description" required>
+              <textarea type="text" id="description" name="description" placeholder="Description" required></textarea>
             </div>
             
             <button class="btn_submit" type="submit" value="Submit">Submit</button>
@@ -313,6 +313,42 @@
       <h1 class="modus_operandi_title">Modus Operandi</h1>
       <p class="modus_operandi_sub_title">...</p>
 
+                <form action="action_page.php" method="post">
+            <div class="form_block">
+              <label for="message">Involvement</label>
+              <input type="text" id="involvement_prop" name="involvement_prop" placeholder="Involvement" required>
+            </div>
+            <div class="form_block">
+              <label for="message">Article</label>
+              <input type="text" id="article" name="article" placeholder="Article" required>
+            </div>
+            <div class="form_block">
+              <label for="message">Brand</label>
+              <input type="text" id="brand" name="brand" placeholder="Brand" required>
+            </div>
+            <div class="form_block">
+              <label for="message">Model</label>
+              <input type="text" id="model_prop" name="model_prop" placeholder="Model" required>
+            </div>
+            <div class="form_block">
+              <label for="message">Serial Num</label>
+              <input type="text" id="serial_num" name="serial_num" placeholder="Serial Num" required>
+            </div>
+            <div class="form_block">
+              <label for="message">Owner</label>
+              <input type="text" id="owner" name="owner" placeholder="Owner" required>
+            </div>
+            <div class="form_block">
+              <label for="message">Value</label>
+              <input type="text" id="value" name="value" placeholder="Value" required>
+            </div>
+            <div class="form_block">
+              <label for="message">Description</label>
+              <textarea type="text" id="description" name="description" placeholder="Description" required></textarea>
+            </div>
+            
+            <button class="btn_submit" type="submit" value="Submit">Submit</button>
+          </form>
     </div>
   </div>
 
