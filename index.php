@@ -159,14 +159,46 @@
 
           <form action="action_page.php" method="post">
             <div class="form_block">
+              <label for="message">Involvement</label>
+              <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+            </div>
+            <div class="form_block">
               <label for="message">Driver's LIC. NO.</label>
               <input type="text" id="driver" name="driver" placeholder="LIC. NO." required>
+            </div>
+            <div class="form_block">
+              <label for="message">LIC. Year</label>
+              <input type="text" id="year" name="year" placeholder="LIC. Year" required>
             </div>
             <div class="form_block">
               <label for="message">State</label>
               <input type="text" id="state" name="state" placeholder="State" required>
             </div>
-            
+            <div class="form_block">
+              <label for="message">Vehicle Year</label>
+              <input type="text" id="veh_year" name="veh_year" placeholder="Vehicle Year" required>
+            </div>
+            <div class="form_block">
+              <label for="message">Make</label>
+              <input type="text" id="make" name="make" placeholder="Make" required>
+            </div>
+            <div class="form_block">
+              <label for="message">Model</label>
+              <input type="text" id="model" name="model" placeholder="Model" required>
+            </div>
+            <div class="form_block">
+              <label for="message">Style</label>
+              <input type="text" id="style" name="style" placeholder="Style" required>
+            </div>
+            <div class="form_block">
+              <label for="message">Color</label>
+              <input type="text" id="color" name="color" placeholder="Color" required>
+            </div>
+            <div class="form_block">
+              <label for="message">VIN</label>
+              <input type="text" id="vin" name="vin" placeholder="VIN" required>
+            </div>
+
             <button class="btn_submit" type="submit" value="Submit">Submit</button>
           </form>
 
