@@ -423,6 +423,23 @@ require 'connection.php';
 
 // Get the input values from the form
 if(isset($_POST["submit"])){
+
+// process the incident data
+$report_num = $_POST['report_num'];
+$author = $_POST['author'];
+$report_date = $_POST['report_date'];
+$report_time = $_POST['report_time'];
+$nat_call = $_POST['nat_call'];
+$location = $_POST['location'];
+$inc_city = $_POST['inc_city'];
+$inc_state = $_POST['inc_state'];
+$inc_zip = $_POST['inc_zip'];
+$from_date = $_POST['from_date'];
+$from_time = $_POST['from_time'];
+$to_date = $_POST['to_date'];
+$to_time = $_POST['to_time']; 
+
+// process the person data
 $full_name = $_POST['last_name' . ' ' . 'first_name' . ' ' . 'first_name'];
 $ssn = $_POST['ssn'];
 $di_travel = $_POST['di_travel'];
@@ -434,6 +451,43 @@ $zip_code = $_POST['pers_zip_code'];
 $date_of_birth = $_POST['date_of_birth'];
 $race = $_POST['race'];
 $sex = $_POST['sex'];
+
+// process the vehicle data
+$involvement = $_POST['involvement'];
+$driver_lic_no = $_POST['driver'];
+$lic_year = $_POST['year'];
+$state_vehicle = $_POST['veh_state'];
+$vehicle_year = $_POST['veh_year'];
+$make = $_POST['make'];
+$model = $_POST['model_veh'];
+$style = $_POST['style'];
+$color = $_POST['color'];
+$vin = $_POST['vin'];
+
+// process the property data
+$involvement_prop = $_POST['involvement_prop'];
+$article = $_POST['article'];
+$brand = $_POST['brand'];
+$model_prop = $_POST['model_prop'];
+$serial_num = $_POST['serial_num'];
+$owner = $_POST['owner'];
+$value = $_POST['value'];
+$description = $_POST['description'];
+
+// process the modus operandi data
+$gang_act = isset($_POST['vehicle3']) ? 'Yes' : 'No';
+$means_of_attack = $_POST['attack'];
+$method_of_entry = $_POST['entry'];
+$weapon_used = $_POST['weapon'];
+$premis_type = $_POST['premis_type'];
+$num_victims = $_POST['num_victims'];
+$victims_race = $_POST['victims_race'];
+$victims_sex = $_POST['victims_sex'];
+$victims_age = $_POST['victims_age'];
+
+// process the narrative data
+$summary = $_POST['summary'];
+$narrative = $_POST['n_narrative'];
 
 // Insert the values into the database
 $query = "INSERT INTO ticket_info VALUES('$full_name', '$ssn', '$di_travel', '$street_address', '$phone', '$city', '$state', '$zip_code', '$date_of_birth')";
