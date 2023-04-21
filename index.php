@@ -360,6 +360,18 @@
       <h1 class="narrative_title">Narrative</h1>
       <p class="narrative_sub_title">...</p>
 
+      <form action="action_page.php" method="post">
+        <div class="form_block">
+          <label for="message">Summary</label>
+          <input type="text" id="summary" name="summary" placeholder="Summary" required>
+        </div>
+        <div class="form_block">
+          <label for="message">Narrative</label>
+          <input type="text" id="narrative" name="narrative" placeholder="Narrative" required>
+        </div>
+
+        <button class="btn_submit" type="submit" value="Submit">Submit</button>
+      </form>
     </div>
   </div>
 
