@@ -320,35 +320,35 @@
             </div>
             <div class="form_block">
               <label for="message">Means of Attack</label>
-              <input type="text" id="article" name="article" placeholder="Article" required>
+              <input type="text" id="attack" name="attack" placeholder="Means of Attack" required>
             </div>
             <div class="form_block">
               <label for="message">Method of Entry</label>
-              <input type="text" id="brand" name="brand" placeholder="Brand" required>
+              <input type="text" id="entry" name="entry" placeholder="Method of Entry" required>
             </div>
             <div class="form_block">
               <label for="message">Weapon Used</label>
-              <input type="text" id="model_prop" name="model_prop" placeholder="Model" required>
+              <input type="text" id="weapon" name="weapon" placeholder="Weapon Used" required>
             </div>
             <div class="form_block">
               <label for="message">Premis Type</label>
-              <input type="text" id="serial_num" name="serial_num" placeholder="Serial Num" required>
+              <input type="text" id="premis_type" name="premis_type" placeholder="Premis Type" required>
             </div>
             <div class="form_block">
-              <label for="message"># of Victims</label>
-              <input type="text" id="owner" name="owner" placeholder="Owner" required>
+              <label for="message">Number of Victims</label>
+              <input type="text" id="num_victims" name="num_victims" placeholder="Number of Victims" required>
             </div>
             <div class="form_block">
-              <label for="message">Vic Race</label>
-              <input type="text" id="value" name="value" placeholder="Value" required>
+              <label for="message">Victims Race</label>
+              <input type="text" id="victims_race" name="victims_race" placeholder="Victims Race" required>
             </div>
             <div class="form_block">
-              <label for="message">Vic Sex</label>
-              <input type="text" id="value" name="value" placeholder="Value" required>
+              <label for="message">Victims Sex</label>
+              <input type="text" id="victims_sex" name="victims_sex" placeholder="Victims Sex" required>
             </div>
             <div class="form_block">
-              <label for="message">Vic Age</label>
-              <input type="text" id="value" name="value" placeholder="Value" required>
+              <label for="message">Victims Age</label>
+              <input type="text" id="victims_age" name="victims_age" placeholder="Victims Age" required>
             </div>
             
             <button class="btn_submit" type="submit" value="Submit">Submit</button>
@@ -366,29 +366,14 @@
 
       <form action="action_page.php" method="post">
             <div class="form_block">
-              <label for="message">Weapon Used</label>
-              <input type="text" id="model_prop" name="model_prop" placeholder="Model" required>
+              <label for="message">Summary</label>
+              <input type="text" id="summary" name="summary" placeholder="Summary" required>
             </div>
             <div class="form_block">
-              <label for="message">Premis Type</label>
-              <input type="text" id="serial_num" name="serial_num" placeholder="Serial Num" required>
+              <label for="message">Narrative</label>
+              <input type="text" id="n_narrative" name="n_narrative" placeholder="Narrative" required>
             </div>
-            <div class="form_block">
-              <label for="message"># of Victims</label>
-              <input type="text" id="owner" name="owner" placeholder="Owner" required>
-            </div>
-            <div class="form_block">
-              <label for="message">Vic Race</label>
-              <input type="text" id="value" name="value" placeholder="Value" required>
-            </div>
-            <div class="form_block">
-              <label for="message">Vic Sex</label>
-              <input type="text" id="value" name="value" placeholder="Value" required>
-            </div>
-            <div class="form_block">
-              <label for="message">Vic Age</label>
-              <input type="text" id="value" name="value" placeholder="Value" required>
-            </div>
+            
             
             <button class="btn_submit" type="submit" value="Submit">Submit</button>
           </form>
