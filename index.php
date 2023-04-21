@@ -30,7 +30,7 @@
         <li><a href="/#property">Property</a></li>
         <li><a href="/#modus_operandi">Modus Operandi</a></li>
         <li><a href="/#narrative">Narrative</a></li>
-        <li><a href="/sign_in.html">Sign In</a></li>
+        <li><a href="/sign_in.php">Sign In</a></li>
       </ul>
       <div class="menu_burger">
         <div class="line1"></div>
@@ -111,8 +111,6 @@
             <label for="message">Involvement</label>
             <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
           </div>
-
-          <button class="btn_submit" type="submit" value="Submit">Submit</button>
         </form>
     </div>
   </div>
@@ -196,11 +194,7 @@
           <label for="message">Eyes</label>
           <input type="text" id="eyes" name="eyes" placeholder="Eyes" required>
         </div>
-      
-        <button class="btn_submit" type="submit" value="Submit">Submit</button>
       </form>
-
-
     </div>
   </div>
 

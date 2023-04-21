@@ -335,7 +335,7 @@ input[type=text], input[type=number], select, textarea {
         max-width: 980px;
     }
 
-    .person_text, .vehicle_text{
+    .incident_text, .person_text, .vehicle_text, .property_text, .modus_operandi_text, .narrative_text{
         width: auto;
     }
 }
