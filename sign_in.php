@@ -13,14 +13,14 @@
 
 <body>
     <div class="background">
-        <form action="student_signup.php" method="post">
+        <form>
             <h3>Student</h3>
 
-            <label for="username">Username</label>
-            <input type="text" placeholder="Email" id="username" required>
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email" name="email" id="email" required>
 
             <label for="password">Password</label>
-            <input type="password" placeholder="Password" id="password" required>
+            <input type="password" placeholder="Password" name="password" id="password" required>
 
             <button type="submit" value="Submit">Sign In</button>
         </form>
@@ -28,3 +28,29 @@
 </body>
 
 </html>
+<?php
+require 'connection.php';
+
+
+if(isset($_POST["Submit"])){
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $temp = $mysqli->prepare("select * from sign_in where email = ?");
+    $temp->bind_param("s", $email);
+    $temp->execute();
+    $temp_result = $temp->get_result();
+    if($temp_result->num_rows > 0){
+        $data = $temp_result->fetch_assoc();
+        if($data['password'] === $password) {
+            
+            echo "Access Granted";
+        } else {
+            echo "Invalid Email or Password";
+         }
+         } else {
+            echo "Invalid Email or Password";
+         }
+} else {
+    echo "Nope";
+}
+?>
