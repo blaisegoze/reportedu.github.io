@@ -315,36 +315,40 @@
 
           <form action="action_page.php" method="post">
             <div class="form_block">
-              <label for="message">Involvement</label>
-              <input type="text" id="involvement_prop" name="involvement_prop" placeholder="Involvement" required>
+              <label for="message">Gang Act</label>
+              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
             </div>
             <div class="form_block">
-              <label for="message">Article</label>
-              <input type="text" id="article" name="article" placeholder="Article" required>
+              <label for="message">Means of Attack</label>
+              <input type="text" id="attack" name="attack" placeholder="Means of Attack" required>
             </div>
             <div class="form_block">
-              <label for="message">Brand</label>
-              <input type="text" id="brand" name="brand" placeholder="Brand" required>
+              <label for="message">Method of Entry</label>
+              <input type="text" id="entry" name="entry" placeholder="Method of Entry" required>
             </div>
             <div class="form_block">
-              <label for="message">Model</label>
-              <input type="text" id="model_prop" name="model_prop" placeholder="Model" required>
+              <label for="message">Weapon Used</label>
+              <input type="text" id="weapon" name="weapon" placeholder="Weapon Used" required>
             </div>
             <div class="form_block">
-              <label for="message">Serial Num</label>
-              <input type="text" id="serial_num" name="serial_num" placeholder="Serial Num" required>
+              <label for="message">Premis Type</label>
+              <input type="text" id="premis_type" name="premis_type" placeholder="Premis Type" required>
             </div>
             <div class="form_block">
-              <label for="message">Owner</label>
-              <input type="text" id="owner" name="owner" placeholder="Owner" required>
+              <label for="message">Number of Victims</label>
+              <input type="text" id="num_victims" name="num_victims" placeholder="Number of Victims" required>
             </div>
             <div class="form_block">
-              <label for="message">Value</label>
-              <input type="text" id="value" name="value" placeholder="Value" required>
+              <label for="message">Victims Race</label>
+              <input type="text" id="victims_race" name="victims_race" placeholder="Victims Race" required>
             </div>
             <div class="form_block">
-              <label for="message">Description</label>
-              <textarea type="text" id="description" name="description" placeholder="Description" required></textarea>
+              <label for="message">Victims Sex</label>
+              <input type="text" id="victims_sex" name="victims_sex" placeholder="Victims Sex" required>
+            </div>
+            <div class="form_block">
+              <label for="message">Victims Age</label>
+              <input type="text" id="victims_age" name="victims_age" placeholder="Victims Age" required>
             </div>
             
             <button class="btn_submit" type="submit" value="Submit">Submit</button>
@@ -361,17 +365,19 @@
       <p class="narrative_sub_title">...</p>
 
       <form action="action_page.php" method="post">
-        <div class="form_block">
-          <label for="message">Summary</label>
-          <input type="text" id="summary" name="summary" placeholder="Summary" required>
-        </div>
-        <div class="form_block">
-          <label for="message">Narrative</label>
-          <input type="text" id="narrative" name="narrative" placeholder="Narrative" required>
-        </div>
-
-        <button class="btn_submit" type="submit" value="Submit">Submit</button>
-      </form>
+            <div class="form_block">
+              <label for="message">Summary</label>
+              <input type="text" id="summary" name="summary" placeholder="Summary" required>
+            </div>
+            <div class="form_block">
+              <label for="message">Narrative</label>
+              <input type="text" id="n_narrative" name="n_narrative" placeholder="Narrative" required>
+            </div>
+            
+            
+            <button class="btn_submit" type="submit" value="Submit">Submit</button>
+          </form>
+      
     </div>
   </div>
 
@@ -417,6 +423,23 @@ require 'connection.php';
 
 // Get the input values from the form
 if(isset($_POST["submit"])){
+
+// process the incident data
+$report_num = $_POST['report_num'];
+$author = $_POST['author'];
+$report_date = $_POST['report_date'];
+$report_time = $_POST['report_time'];
+$nat_call = $_POST['nat_call'];
+$location = $_POST['location'];
+$inc_city = $_POST['inc_city'];
+$inc_state = $_POST['inc_state'];
+$inc_zip = $_POST['inc_zip'];
+$from_date = $_POST['from_date'];
+$from_time = $_POST['from_time'];
+$to_date = $_POST['to_date'];
+$to_time = $_POST['to_time']; 
+
+// process the person data
 $full_name = $_POST['last_name' . ' ' . 'first_name' . ' ' . 'first_name'];
 $ssn = $_POST['ssn'];
 $di_travel = $_POST['di_travel'];
@@ -428,6 +451,43 @@ $zip_code = $_POST['pers_zip_code'];
 $date_of_birth = $_POST['date_of_birth'];
 $race = $_POST['race'];
 $sex = $_POST['sex'];
+
+// process the vehicle data
+$involvement = $_POST['involvement'];
+$driver_lic_no = $_POST['driver'];
+$lic_year = $_POST['year'];
+$state_vehicle = $_POST['veh_state'];
+$vehicle_year = $_POST['veh_year'];
+$make = $_POST['make'];
+$model = $_POST['model_veh'];
+$style = $_POST['style'];
+$color = $_POST['color'];
+$vin = $_POST['vin'];
+
+// process the property data
+$involvement_prop = $_POST['involvement_prop'];
+$article = $_POST['article'];
+$brand = $_POST['brand'];
+$model_prop = $_POST['model_prop'];
+$serial_num = $_POST['serial_num'];
+$owner = $_POST['owner'];
+$value = $_POST['value'];
+$description = $_POST['description'];
+
+// process the modus operandi data
+$gang_act = isset($_POST['vehicle3']) ? 'Yes' : 'No';
+$means_of_attack = $_POST['attack'];
+$method_of_entry = $_POST['entry'];
+$weapon_used = $_POST['weapon'];
+$premis_type = $_POST['premis_type'];
+$num_victims = $_POST['num_victims'];
+$victims_race = $_POST['victims_race'];
+$victims_sex = $_POST['victims_sex'];
+$victims_age = $_POST['victims_age'];
+
+// process the narrative data
+$summary = $_POST['summary'];
+$narrative = $_POST['n_narrative'];
 
 // Insert the values into the database
 $query = "INSERT INTO ticket_info VALUES('$full_name', '$ssn', '$di_travel', '$street_address', '$phone', '$city', '$state', '$zip_code', '$date_of_birth')";
