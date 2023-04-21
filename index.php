@@ -58,6 +58,62 @@
       <h1 class="incident_title">Incident</h1>
       <p class="incident_sub_title">...</p>
       
+        <form action="action_page.php" method="post">
+          <div class="form_block">
+            <label for="message">REPORT NUM(FIX LATER)</label>
+            <input type="text" id="report_num" name="report_num" placeholder="REPORT NUM(FIX LATER)" required>
+          </div>
+          <div class="form_block">
+            <label for="message">Author</label>
+            <input type="text" id="author" name="author" placeholder="Author" required>
+          </div>
+          <div class="form_block">
+            <label for="message">Report Date</label>
+            <input type="text" id="report_date" name="report_date" placeholder="Report Date" required>
+          </div>
+          <div class="form_block">
+            <label for="message">Nature of Call</label>
+            <input type="text" id="nat_call" name="nat_call" placeholder="Nature of Call" required>
+          </div>
+          <div class="form_block">
+            <label for="message">Location</label>
+            <input type="text" id="location" name="location" placeholder="Location" required>
+          </div>
+          <div class="form_block">
+            <label for="message">City</label>
+            <input type="text" id="inc_city" name="inc_city" placeholder="City" required>
+          </div>
+          <div class="form_block">
+            <label for="message">Involvement</label>
+            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+          </div>
+          <div class="form_block">
+            <label for="message">Involvement</label>
+            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+          </div>
+          <div class="form_block">
+            <label for="message">Involvement</label>
+            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+          </div>
+          <div class="form_block">
+            <label for="message">Involvement</label>
+            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+          </div>
+          <div class="form_block">
+            <label for="message">Involvement</label>
+            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+          </div>
+          <div class="form_block">
+            <label for="message">Involvement</label>
+            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+          </div>
+          <div class="form_block">
+            <label for="message">Involvement</label>
+            <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
+          </div>
+
+          <button class="btn_submit" type="submit" value="Submit">Submit</button>
+        </form>
     </div>
   </div>
 
@@ -85,27 +141,27 @@
         </div>
         <div class="form_block">
           <label for="message">DI of Travel</label>
-          <input type="text" id="di_travel" name="di" placeholder="DI of Travel" required>
+          <input type="text" id="di_travel" name="di_travel" placeholder="DI of Travel" required>
         </div>
         <div class="form_block">
           <label for="message">Street Address</label>
-          <input type="text" id="street_address" name="di" placeholder="Street Address" required>
+          <input type="text" id="street_address" name="street_address" placeholder="Street Address" required>
         </div>
         <div class="form_block">
           <label for="message">Phone#</label>
-          <input type="text" id="phone#" name="di" placeholder="Phone#" required>
+          <input type="text" id="phonenum" name="phonenum" placeholder="Phone#" required>
         </div>
         <div class="form_block">
           <label for="message">City</label>
-          <input type="text" id="city" name="di" placeholder="City" required>
+          <input type="text" id="pers_city" name="pers_city" placeholder="City" required>
         </div>
         <div class="form_block">
           <label for="message">State</label>
-          <input type="text" id="state" name="di" placeholder="State" required>
+          <input type="text" id="pers_state" name="pers_state" placeholder="State" required>
         </div>
         <div class="form_block">
           <label for="message">Zip Code</label>
-          <input type="number" id="zip_code" name="di" placeholder="Zip Code" required>
+          <input type="number" id="pers_zip_code" name="pers_zip_code" placeholder="Zip Code" required>
         </div>
         <div class="form_block">
           <label for="message">Date of Birth</label>
@@ -172,7 +228,7 @@
             </div>
             <div class="form_block">
               <label for="message">State</label>
-              <input type="text" id="state" name="state" placeholder="State" required>
+              <input type="text" id="veh_state" name="veh_state" placeholder="State" required>
             </div>
             <div class="form_block">
               <label for="message">Vehicle Year</label>
@@ -323,10 +379,10 @@ $full_name = $_POST['last_name' . ' ' . 'first_name' . ' ' . 'first_name'];
 $ssn = $_POST['ssn'];
 $di_travel = $_POST['di_travel'];
 $street_address = $_POST['street_address'];
-$phone = $_POST['phone#'];
-$city = $_POST['city'];
-$state = $_POST['state'];
-$zip_code = $_POST['zip_code'];
+$phone = $_POST['phonenum'];
+$city = $_POST['pers_city'];
+$state = $_POST['pers_state'];
+$zip_code = $_POST['pers_zip_code'];
 $date_of_birth = $_POST['date_of_birth'];
 $race = $_POST['race'];
 $sex = $_POST['sex'];
