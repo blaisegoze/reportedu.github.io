@@ -316,7 +316,7 @@
           <form action="action_page.php" method="post">
             <div class="form_block">
               <label for="message">Gang Act</label>
-              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+              <input type="checkbox" id="gang_act" name="gang_act" value="gang_act">
             </div>
             <div class="form_block">
               <label for="message">Means of Attack</label>
