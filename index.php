@@ -58,7 +58,7 @@
       <h1 class="incident_title">Incident</h1>
       <p class="incident_sub_title">...</p>
       
-        <form action="action_page.php" method="post">
+        <form>
           <div class="form_block">
             <label for="message">REPORT NUM(FIX LATER)</label>
             <input type="text" id="report_num" name="report_num" placeholder="REPORT NUM(FIX LATER)" required>
@@ -124,7 +124,7 @@
       <p class="person_sub_title">...</p>
 
       
-      <form action="action_page.php" method="post">
+      <form>
         <div class="form_block_subs">
           <label for="message">Name</label>
           <div class="form_block_sub">
@@ -207,7 +207,7 @@
           <p class="vehicle_sub_title">...</p>
 
 
-          <form action="action_page.php" method="post">
+          <form>
             <div class="form_block">
               <label for="message">Involvement</label>
               <input type="text" id="involvement" name="involvement" placeholder="Involvement" required>
@@ -266,7 +266,7 @@
           <p class="property_sub_title">...</p>
 
 
-          <form action="action_page.php" method="post">
+          <form>
             <div class="form_block">
               <label for="message">Involvement</label>
               <input type="text" id="involvement_prop" name="involvement_prop" placeholder="Involvement" required>
@@ -313,7 +313,7 @@
       <h1 class="modus_operandi_title">Modus Operandi</h1>
       <p class="modus_operandi_sub_title">...</p>
 
-          <form action="action_page.php" method="post">
+          <form>
             <div class="form_block">
               <label for="message">Gang Act</label>
               <input type="checkbox" id="gang_act" name="gang_act" value="gang_act">
@@ -364,7 +364,7 @@
       <h1 class="narrative_title">Narrative</h1>
       <p class="narrative_sub_title">...</p>
 
-      <form action="action_page.php" method="post">
+      <form>
             <div class="form_block">
               <label for="message">Summary</label>
               <input type="text" id="summary" name="summary" placeholder="Summary" required>
