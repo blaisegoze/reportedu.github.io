@@ -1,5 +1,6 @@
 <?php
  include "connection.php";
+ error_reporting(E_ALL); ini_set('display_errors', 1);
 
 if (isset($_POST['email']) && isset($_POST['password'])) {
     function validate($data){
@@ -34,8 +35,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                 exit();
             }
             else{
-                header("Location: sign_in.php");
-                echo '<script>alert("Welcome to Geeks for Geeks")</script>';
+                header("Location: sign_in.php?error=1");
                 exit();
             }
         }
@@ -43,7 +43,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     }
 }
 else{
-    header("Location: sign_in.php");
+    header("Location: sign_in.php?error=1");
     exit();
 }
 ?>
