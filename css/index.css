@@ -1,3 +1,15 @@
+/* General */
+.checkbox_div{
+    height: 50px;
+    padding: 12px;
+    margin: 6px 0 16px 0;
+
+}
+
+
+/* /////////////////////////// */
+
+
 /* Hero Image */
 .hero{
     height: 100vh;
@@ -71,6 +83,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    width: 100%;
 }
 
 .incident_title{
@@ -206,6 +219,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    width: 100%;
 }
 
 .modus_operandi_title{
@@ -239,6 +253,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    width: 100%;
 }
 
 .narrative_title{
@@ -254,7 +269,7 @@
 
 
 /* Forms & Inputs */
-form {
+.form_chunk {
     text-align: left;
     display: flex;
     flex-direction: row;
@@ -264,7 +279,7 @@ form {
     padding: 0 20px;
 }
 
-form * {
+.form_chunk * {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     letter-spacing: 0.5px;
@@ -330,7 +345,7 @@ input[type=text], input[type=number], select, textarea {
 }
 
 @media screen and (min-width:980px){
-    form{
+    .form_chunk{
         min-width: 980px;
         max-width: 980px;
     }
