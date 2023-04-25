@@ -30,7 +30,7 @@
         <li><a href="/#property">Property</a></li>
         <li><a href="/#modus_operandi">Modus Operandi</a></li>
         <li><a href="/#narrative">Narrative</a></li>
-        <li><a href="/sign_in/sign_in_student.php">Sign In</a></li>
+        <li><a href="/sign_in/sign_in_student.php">Sign Out</a></li>
       </ul>
       <div class="menu_burger">
         <div class="line1"></div>
