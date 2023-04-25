@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/home_student.css">
   <link rel="icon" href="/icon/hard_work_u.svg">
   <title>Report.edu</title>
 </head>
@@ -16,7 +16,7 @@
   <!-- Navigation Bar -->
   <nav>
     <div class="nav_content">
-      <a class="logo" href="/home_student.php">
+      <a class="logo" href="/index.php">
         <svg id="Layer_2" data-name="Layer 2" viewBox="0 0 265.21 282.26">
           <g id="Layer_1-2" data-name="Layer 1">
             <path class="cls-1" d="M247.02,272.51c0,3.56-3.07,6.45-6.85,6.45s-6.85-2.89-6.85-6.45,3.06-6.46,6.85-6.46,6.85,2.89,6.85,6.46Z"/>
@@ -25,33 +25,15 @@
         </svg>
       </a>
       <ul class="nav_links">
-        <li><a href="/#incident">Incident</a></li>
-        <li><a href="/#person">Person</a></li>
-        <li><a href="/#vehicle">Vehicle</a></li>
-        <li><a href="/#property">Property</a></li>
-        <li><a href="/#modus_operandi">Modus Operandi</a></li>
-        <li><a href="/#narrative">Narrative</a></li>
-<<<<<<< Updated upstream
-        <li><a href="/sign_in/sign_in_student.php">Sign Out</a></li>
-=======
+        <li><a href="/#incident">My Forms</a></li>
+        <li><a href="/#person">Create</a></li>
         <li><a href="/sign_in.php">Sign Out</a></li>
->>>>>>> Stashed changes
       </ul>
       <div class="menu_burger">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
-    </div>
-    <div class="nav_content">
-      <ul class="nav_links">
-        <li><a href="/#incident">Incident</a></li>
-        <li><a href="/#person">Person</a></li>
-        <li><a href="/#vehicle">Vehicle</a></li>
-        <li><a href="/#property">Property</a></li>
-        <li><a href="/#modus_operandi">Modus Operandi</a></li>
-        <li><a href="/#narrative">Narrative</a></li>
-      </ul>
     </div>
   </nav>
 
