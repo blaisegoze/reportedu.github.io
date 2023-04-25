@@ -16,7 +16,7 @@
   <!-- Navigation Bar -->
   <nav>
     <div class="nav_content">
-      <a class="logo" href="/index.php">
+      <a class="logo" href="/home_student.php">
         <svg id="Layer_2" data-name="Layer 2" viewBox="0 0 265.21 282.26">
           <g id="Layer_1-2" data-name="Layer 1">
             <path class="cls-1" d="M247.02,272.51c0,3.56-3.07,6.45-6.85,6.45s-6.85-2.89-6.85-6.45,3.06-6.46,6.85-6.46,6.85,2.89,6.85,6.46Z"/>
@@ -26,7 +26,7 @@
       </a>
       <ul class="nav_links">
         <li><a href="/#incident">My Forms</a></li>
-        <li><a href="/#person">Create</a></li>
+        <li><a href="/index.php">Create</a></li>
         <li><a href="/sign_in.php">Sign Out</a></li>
       </ul>
       <div class="menu_burger">
