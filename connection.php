@@ -14,9 +14,8 @@ foreach ($hostnames as $hostname) {
                 if ($mysqli->connect_errno) {
                     continue; // try the next combination
                 } else {
-                    echo "Successfully connected to MySQL on $hostname using user $user, password $password, and database $dbname";
-                    // do something with the connection
-                    break 4; // stop trying more combinations
+                    
+                    break 4; 
                 }
             }
         }
