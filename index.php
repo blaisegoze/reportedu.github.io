@@ -31,11 +31,7 @@
         <li><a href="/#property">Property</a></li>
         <li><a href="/#modus_operandi">Modus Operandi</a></li>
         <li><a href="/#narrative">Narrative</a></li>
-<<<<<<< Updated upstream
         <li><a href="/sign_in/sign_in_student.php">Sign Out</a></li>
-=======
-        <li><a href="/sign_in.php">Sign Out</a></li>
->>>>>>> Stashed changes
       </ul>
       <div class="menu_burger">
         <div class="line1"></div>
