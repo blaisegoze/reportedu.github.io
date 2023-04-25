@@ -32,7 +32,7 @@
 require 'connection.php';
 
 
-if(isset($_POST["Submit"])){
+if(isset($_POST["submit"])){
     $email = $_POST['email'];
     $password = $_POST['password'];
     $temp = $mysqli->prepare("select * from sign_in where email = ?");
@@ -42,15 +42,16 @@ if(isset($_POST["Submit"])){
     if($temp_result->num_rows > 0){
         $data = $temp_result->fetch_assoc();
         if($data['password'] === $password) {
-            
-            echo "Access Granted";
+            header("Location: index.php");
+            echo "<h2>Access Granted</h2>";
         } else {
-            echo "Invalid Email or Password";
+            echo "<h2>Invalid Email or Password</h2>";
          }
          } else {
-            echo "Invalid Email or Password";
+            echo "<h2>Invalid Email or Password</h2>";
          }
 } else {
-    echo "Nope";
+    echo "<h2>Nope</h2>";
 }
+exit();
 ?>
