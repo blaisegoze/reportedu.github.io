@@ -1,6 +1,7 @@
 <?php
+session_start();
  include "connection.php";
- error_reporting(E_ALL); ini_set('display_errors', 1);
+ 
 
 if (isset($_POST['email']) && isset($_POST['password'])) {
     function validate($data){
@@ -21,29 +22,25 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         header("Location: sign_in.php?error=Password is required");
         exit();
     }
-    else{
         $sql = "SELECT * FROM sign_in WHERE email ='$email' AND password ='$password'";
         $result = mysqli_query($mysqli, $sql);
 
         if (mysqli_num_rows($result) === 1) {
-            $row = mysqli_fetch_assoc($result);
+    $row = mysqli_fetch_assoc($result);
 
-            if ($row['email'] === $email && $row['password'] === $password) {
-                echo "<h2>Logged in!</h2>";
-                $_SESSION['email'] = $row['email'];
-                header("Location: index.php");
-                exit();
-            }
-            else{
-                header("Location: sign_in.php?error=1");
-                exit();
-            }
-        }
-        
+    if ($row['email'] === $email && $row['password'] === $password) {
+        // Logged in successfully
+        $_SESSION['email'] = $row['email'];
+        header("Location: index.php");
+        exit();
+    } else {
+        // Incorrect email or password
+        header("Location: sign_in.php?error=Incorrect email or password");
+        exit();
     }
-}
-else{
-    header("Location: sign_in.php?error=1");
+} else {
+    // Incorrect email or password
+    header("Location: sign_in.php?error=Incorrect email or password");
     exit();
-}
+}}
 ?>

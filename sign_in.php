@@ -15,18 +15,11 @@
     <div class="background">
         <form action="sign_in_php.php" method="post">
             <h3>Student</h3>
-            <?php
-            if (isset($_GET['error']) && $_GET['error'] == 1) {
-            echo "<p style='color: red;'>Incorrect email or password</p>";
-            }
-            ?>
+            <?php if(isset($_GET['error'])) { ?>
+            <p class="error"> <?php echo $_GET["error"]; ?></p>
+            <?php } ?>
             <label for="email">Email</label>
             <input type="text" placeholder="Email" name="email" id="email" required>
-            <?php
-if (isset($_GET['error']) && $_GET['error'] == 1) {
-    echo "<p style='color: red;'>Incorrect email or password</p>";
-}
-?>
 
             <label for="password">Password</label>
             <input type="password" placeholder="Password" name="password" id="password" required>
