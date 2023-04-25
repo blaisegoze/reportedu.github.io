@@ -34,7 +34,8 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                 exit();
             }
             else{
-                header("Location: sign_in.php?error=Incorect User name or password");
+                header("Location: sign_in.php");
+                echo '<script>alert("Welcome to Geeks for Geeks")</script>';
                 exit();
             }
         }
