@@ -13,8 +13,8 @@
 
 <body>
     <div class="background">
-        <form action="sign_in_php.php" method="post">
-            <h3>Student</h3>
+        <form action="sign_in_php_teacher.php" method="post">
+            <h3>Teacher</h3>
             <?php if(isset($_GET['error'])) { ?>
             <p class="error"> <?php echo $_GET["error"]; ?></p>
             <?php } ?>

@@ -15,11 +15,11 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     $password = validate($_POST['password']);
 
     if (empty($email)) {
-        header("Location: sign_in.php?error=User Name is required");
+        header("Location: sign_in_teacher.php?error=User Name is required");
         exit();
     }
     else if(empty($password)){
-        header("Location: sign_in.php?error=Password is required");
+        header("Location: sign_in_teacher.php?error=Password is required");
         exit();
     }
         $sql = "SELECT * FROM sign_in WHERE email ='$email' AND password ='$password'";
@@ -35,12 +35,12 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         exit();
     } else {
         // Incorrect email or password
-        header("Location: sign_in.php?error=Incorrect email or password");
+        header("Location: sign_in_teacher.php?error=Incorrect email or password");
         exit();
     }
 } else {
     // Incorrect email or password
-    header("Location: sign_in.php?error=Incorrect email or password");
+    header("Location: sign_in_teacher.php?error=Incorrect email or password");
     exit();
 }}
 ?>
