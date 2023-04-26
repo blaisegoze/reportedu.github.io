@@ -31,16 +31,16 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     if ($row['email'] === $email && $row['password'] === $password) {
         // Logged in successfully
         $_SESSION['email'] = $row['email'];
-        header("Location: index.php");
+        header("Location: ../home_student.php");
         exit();
     } else {
         // Incorrect email or password
-        header("Location: sign_in_studentp?error=Incorrect email or password");
+        header("Location: sign_in_studentp.php?error=Incorrect email or password");
         exit();
     }
 } else {
     // Incorrect email or password
-    header("Location: sign_in_student?error=Incorrect email or password");
+    header("Location: sign_in_student.php?error=Incorrect email or password");
     exit();
 }}
 ?>

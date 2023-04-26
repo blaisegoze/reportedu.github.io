@@ -31,7 +31,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     if ($row['email'] === $email && $row['password'] === $password) {
         // Logged in successfully
         $_SESSION['email'] = $row['email'];
-        header("Location: index.php");
+        header("Location: ../index.php");
         exit();
     } else {
         // Incorrect email or password
