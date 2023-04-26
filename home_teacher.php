@@ -26,8 +26,7 @@
       </a>
       <ul class="nav_links">
         <li><a href="/#incident">Reports</a></li>
-        <li><a href="/index.php">Create</a></li>
-        <li><a href="/sign_in/sign_in_student.php">Sign Out</a></li>
+        <li><a href="/sign_in/sign_in_teacher.php">Sign Out</a></li>
       </ul>
       <div class="menu_burger">
         <div class="line1"></div>
