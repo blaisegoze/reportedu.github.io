@@ -53,7 +53,9 @@
       <div class="incident_img"></div>
       <div class="incident_text">
         <h1 class="incident_title">Reports</h1>
-        <p class="incident_sub_title">...</p>
+        <?while($row=mysqli_fetch_assoc($result)) ?>
+        <p align='middle'><?php echo $row['report_num']; ?></p>
+        <h3 align='middle'><?php echo $row['author']; ?></h3>
         
 
       </div>
