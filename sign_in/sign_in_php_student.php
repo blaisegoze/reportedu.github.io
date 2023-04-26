@@ -22,7 +22,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         header("Location: sign_in_student.php?error=Password is required");
         exit();
     }
-        $sql = "SELECT * FROM sign_in WHERE email ='$email' AND password ='$password'";
+        $sql = "SELECT * FROM sign_in_student WHERE email ='$email' AND password ='$password'";
         $result = mysqli_query($mysqli, $sql);
 
         if (mysqli_num_rows($result) === 1) {
