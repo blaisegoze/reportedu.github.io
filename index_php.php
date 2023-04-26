@@ -1,7 +1,6 @@
 <?php
 require 'connection.php';
 
-$report_num = $_POST['report_num'];
 $author = $_POST['author'];
 $report_date = $_POST['report_date'];
 $report_time = $_POST['report_time'];
@@ -62,7 +61,7 @@ $victims_age = $_POST['victims_age'];
 $summary = $_POST['summary'];
 $n_narrative = $_POST['n_narrative'];
 
-$query = "INSERT INTO ticket_info VALUES('$report_num', '$author', '$report_date', '$report_time', '$nat_call', '$location', '$inc_city', '$inc_state', '$inc_zip', '$from_date', '$from_time', '$to_date', '$to_time', '$first_name', '$middle_name', '$last_name', '$ssn', '$di_travel', '$street_address', '$phonenum', '$pers_city', '$pers_state', '$pers_zip_code', '$date_of_birth', '$race', '$sex', '$involvement', '$driver', '$year', '$veh_state', '$veh_year', '$make', '$model_veh', '$style', '$color', '$vin', '$involvement_prop', '$article', '$brand', '$model_prop', '$serial_num', '$owner', '$value', '$description', '$gang_act', '$means_of_attack', '$method_of_entry', '$weapon_used', '$premis_type', '$num_victims', '$victims_race', '$victims_sex', '$victims_age', '$summary', '$n_narrative')";
+$query = "INSERT INTO ticket_info VALUES(NULL, '$author', '$report_date', '$report_time', '$nat_call', '$location', '$inc_city', '$inc_state', '$inc_zip', '$from_date', '$from_time', '$to_date', '$to_time', '$first_name', '$middle_name', '$last_name', '$ssn', '$di_travel', '$street_address', '$phonenum', '$pers_city', '$pers_state', '$pers_zip_code', '$date_of_birth', '$race', '$sex', '$involvement', '$driver', '$year', '$veh_state', '$veh_year', '$make', '$model_veh', '$style', '$color', '$vin', '$involvement_prop', '$article', '$brand', '$model_prop', '$serial_num', '$owner', '$value', '$description', '$gang_act', '$means_of_attack', '$method_of_entry', '$weapon_used', '$premis_type', '$num_victims', '$victims_race', '$victims_sex', '$victims_age', '$summary', '$n_narrative')";
   $stmt = mysqli_stmt_init($mysqli);
   mysqli_query($mysqli, $query);
 
