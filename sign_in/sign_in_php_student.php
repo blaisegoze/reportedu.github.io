@@ -35,7 +35,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         exit();
     } else {
         // Incorrect email or password
-        header("Location: sign_in_studentp.php?error=Incorrect email or password");
+        header("Location: sign_in_student.php?error=Incorrect email or password");
         exit();
     }
 } else {
