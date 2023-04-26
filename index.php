@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/index.css">
   <link rel="icon" href="/icon/hard_work_u.svg">
-  <title>Report.edu</title>
+  <title>Report.edu | Create</title>
 </head>
 
 <body>
   <!-- Navigation Bar -->
-  <nav>
+  <nav class="nav_background">
     <div class="nav_content">
       <a class="logo" href="/home_student.php">
         <svg id="Layer_2" data-name="Layer 2" viewBox="0 0 265.21 282.26">
@@ -25,7 +25,7 @@
         </svg>
       </a>
       <ul class="nav_links">
-        <li><a href="/#incident">My Forms</a></li>
+        <li><a href="/home_student.php">Reports</a></li>
         <li><a href="/index.php">Create</a></li>
         <li><a href="/sign_in/sign_in_student.php">Sign Out</a></li>
       </ul>
@@ -35,6 +35,8 @@
         <div class="line3"></div>
       </div>
     </div>
+  </nav>
+  <nav class="form_nav_background">
     <div class="form_nav_content">
       <ul class="form_nav_links">
         <li><a href="/#incident">Incident</a></li>
@@ -48,15 +50,7 @@
   </nav>
 
 
-  <!-- Home -->
-  <div id="home" class="hero">
-    <div class="hero_image rellax" data-rellax-speed="10">
-    </div>
-    <div class="hero_text">
-      <h1 class="hero_title rellax" data-rellax-speed="2">Report.edu</h1>
-      <p class="hero_sub_title rellax" data-rellax-speed="2">College of the Ozarks</p>
-    </div>
-  </div>
+
 
 
   <!-- Form Start -->

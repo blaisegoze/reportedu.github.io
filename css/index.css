@@ -269,10 +269,21 @@
 
 
 /* Forms & Inputs */
+.form_nav_background{
+    position: fixed;
+    top: 60px;
+    right: 0;
+    left: 0;
+    min-height: 40px;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    z-index: 1;
+}
+
 .form_nav_content{
     margin: 0 auto;
     max-width: 980px;
-    min-height: 60px;
+    min-height: 40px;
     padding: 0 20px;
     display: flex;
     justify-content: center;

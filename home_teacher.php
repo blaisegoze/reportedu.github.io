@@ -16,7 +16,7 @@
   <!-- Navigation Bar -->
   <nav>
     <div class="nav_content">
-      <a class="logo" href="/home_student.php">
+      <a class="logo" href="/home_teacher.php">
         <svg id="Layer_2" data-name="Layer 2" viewBox="0 0 265.21 282.26">
           <g id="Layer_1-2" data-name="Layer 1">
             <path class="cls-1" d="M247.02,272.51c0,3.56-3.07,6.45-6.85,6.45s-6.85-2.89-6.85-6.45,3.06-6.46,6.85-6.46,6.85,2.89,6.85,6.46Z"/>
@@ -25,7 +25,7 @@
         </svg>
       </a>
       <ul class="nav_links">
-        <li><a href="/#incident">My Forms</a></li>
+        <li><a href="/#incident">Reports</a></li>
         <li><a href="/index.php">Create</a></li>
         <li><a href="/sign_in/sign_in_student.php">Sign Out</a></li>
       </ul>
@@ -49,77 +49,16 @@
   </div>
 
 
-  <!-- Form Start -->
-  <form>
-
-  
     <!-- Incident -->
     <div id="incident">
       <div class="incident_img"></div>
       <div class="incident_text">
-        <h1 class="incident_title">Incident</h1>
+        <h1 class="incident_title">Reports</h1>
         <p class="incident_sub_title">...</p>
         
-        <div class="form_chunk">
-            <div class="form_block">
-              <label for="message">REPORT NUM(FIX LATER)</label>
-              <input type="text" id="report_num" name="report_num" placeholder="REPORT NUM(FIX LATER)" required>
-            </div>
-            <div class="form_block">
-              <label for="message">Author</label>
-              <input type="text" id="author" name="author" placeholder="Author" required>
-            </div>
-            <div class="form_block">
-              <label for="message">Report Date</label>
-              <input type="text" id="report_date" name="report_date" placeholder="Report Date" required>
-            </div>
-            <div class="form_block">
-              <label for="message">Report Time</label>
-              <input type="text" id="report_time" name="report_time" placeholder="Report Time" required>
-            </div>
-            <div class="form_block">
-              <label for="message">Nature of Call</label>
-              <input type="text" id="nat_call" name="nat_call" placeholder="Nature of Call" required>
-            </div>
-            <div class="form_block">
-              <label for="message">Location</label>
-              <input type="text" id="location" name="location" placeholder="Location" required>
-            </div>
-            <div class="form_block">
-              <label for="message">City</label>
-              <input type="text" id="inc_city" name="inc_city" placeholder="City" required>
-            </div>
-            <div class="form_block">
-              <label for="message">State</label>
-              <input type="text" id="inc_state" name="inc_state" placeholder="State" required>
-            </div>
-            <div class="form_block">
-              <label for="message">Zip Code</label>
-              <input type="text" id="inc_zip" name="inc_zip" placeholder="Zip Code" required>
-            </div>
-            <div class="form_block">
-              <label for="message">From Date</label>
-              <input type="text" id="from_date" name="from_date" placeholder="From Date" required>
-            </div>
-            <div class="form_block">
-              <label for="message">From Time</label>
-              <input type="text" id="from_time" name="from_time" placeholder="From Time" required>
-            </div>
-            <div class="form_block">
-              <label for="message">To Date</label>
-              <input type="text" id="to_date" name="to_date" placeholder="To Date" required>
-            </div>
-            <div class="form_block">
-              <label for="message">To Time</label>
-              <input type="text" id="to_time" name="to_time" placeholder="To Time" required>
-            </div>
-        </div>
 
       </div>
     </div>
-
-  <!-- Form End -->
-  </form>
 
 
   <!-- Footer -->
