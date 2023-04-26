@@ -23,6 +23,6 @@ foreach ($hostnames as $hostname) {
 }
 
 if (!$mysqli) {
-    echo "Failed to connect to any MySQL server";
+    
 }
 ?>

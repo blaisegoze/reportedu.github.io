@@ -115,3 +115,9 @@ button {
 .sign_in_sub_header{
     text-align: center;
 }
+
+.error{
+    margin: -20px 0;
+    padding: 40px 0 10px 0;
+    text-align: center;
+}
