@@ -65,10 +65,7 @@
         <p class="incident_sub_title">...</p>
         
         <div class="form_chunk">
-            <div class="form_block">
-              <label for="message">REPORT NUM(FIX LATER)</label>
-              <input type="number" id="report_num" name="report_num" placeholder="REPORT NUM(FIX LATER)" required>
-            </div>
+            
             <div class="form_block">
               <label for="message">Author</label>
               <input type="text" id="author" name="author" placeholder="Author" required>
