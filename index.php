@@ -35,8 +35,8 @@
         <div class="line3"></div>
       </div>
     </div>
-    <div class="nav_content">
-      <ul class="nav_links">
+    <div class="form_nav_content">
+      <ul class="form_nav_links">
         <li><a href="/#incident">Incident</a></li>
         <li><a href="/#person">Person</a></li>
         <li><a href="/#vehicle">Vehicle</a></li>

@@ -269,6 +269,37 @@
 
 
 /* Forms & Inputs */
+.form_nav_content{
+    margin: 0 auto;
+    max-width: 980px;
+    min-height: 60px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_nav_links{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.form_nav_links li{
+    list-style: none;
+}
+
+.form_nav_links a{
+    color: hsl(0,0%,70%);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.form_nav_links a:hover{
+    color: #6C102A;
+}
+
 .form_chunk {
     text-align: left;
     display: flex;

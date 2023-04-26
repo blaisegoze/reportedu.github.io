@@ -72,7 +72,7 @@ nav{
 .nav_links{
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 30%;
 }
 
 .nav_links li{
