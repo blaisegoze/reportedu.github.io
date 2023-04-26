@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="/css/sign_in.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/icon/hard_work_u.svg">
-    <title>Report.edu | Sign In</title>
+    <title>Report.edu | Student Sign In</title>
 </head>
 
 <body>
     <div class="background">
         <form action="sign_in_php_student.php" method="post">
-            <h3>Student</h3>
+            <h3 class="sign_in_header">Student</h3>
+            <p class="sign_in_sub_header">or <a href="/sign_in/sign_in_teacher.php">Teacher</a></p>
             <?php if(isset($_GET['error'])) { ?>
             <p class="error"> <?php echo $_GET["error"]; ?></p>
             <?php } ?>

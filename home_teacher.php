@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/home_student.css">
   <link rel="icon" href="/icon/hard_work_u.svg">
-  <title>Report.edu | Student</title>
+  <title>Report.edu | Teacher</title>
 </head>
 
 <body>

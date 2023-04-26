@@ -22,7 +22,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         header("Location: sign_in_teacher.php?error=Password is required");
         exit();
     }
-        $sql = "SELECT * FROM sign_in WHERE email ='$email' AND password ='$password'";
+        $sql = "SELECT * FROM sign_in_teacher WHERE email ='$email' AND password ='$password'";
         $result = mysqli_query($mysqli, $sql);
 
         if (mysqli_num_rows($result) === 1) {
@@ -31,7 +31,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     if ($row['email'] === $email && $row['password'] === $password) {
         // Logged in successfully
         $_SESSION['email'] = $row['email'];
-        header("Location: ../index.php");
+        header("Location: ../home_teacher.php");
         exit();
     } else {
         // Incorrect email or password
