@@ -50,13 +50,17 @@
 
 
   <!-- Form Start -->
-  <form action="index_php.php" method="post">
+  <form>
+
+  <?php require 'connection.php';
+        $table = mysqli_query($mysqli, "SELECT * From ticket_info");
+        while($row=mysqli_fetch_assoc($table)){?>
 
     <!-- Report -->
     <div id="report">
       <div class="report_img"></div>
       <div class="report_text">
-        <h1 class="report_num">Report #:<span class="report_input"></span></h1>
+        <h1 class="report_num">Report #:<span class="report_input"><?php echo $row['report_num']; ?></span></h1>
         <h1 class="report_title">Incident</h1>
         <div class="form_chunk">
             
@@ -307,12 +311,13 @@
         <div class="form_block">
           <label for="message">Narrative</label>
         
+          <?php } ?>
         </div>
       </div>
 
       </div>
     </div>
-
+   
   <!-- Form End -->
   </form>
 
