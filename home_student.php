@@ -54,7 +54,7 @@
 
   <?php require 'connection.php';
         $table = mysqli_query($mysqli, "SELECT * From ticket_info");
-        while($row=mysqli_fetch_assoc($table)){?>
+        $row=mysqli_fetch_assoc($table) ?>
 
     <!-- Report -->
     <div id="report">
@@ -311,13 +311,13 @@
         <div class="form_block">
           <label for="message">Narrative</label>
         
-          <?php } ?>
+          
         </div>
       </div>
 
       </div>
     </div>
-   
+    
   <!-- Form End -->
   </form>
 
