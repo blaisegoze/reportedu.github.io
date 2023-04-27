@@ -64,53 +64,20 @@
 /* /////////////////////////// */
 
 
-/* Incident */
-#incident{
-    background-color: hsl(0, 0%, 90%);
-    height: 100vh;
-    position: relative;
-}
-
-.incident_img{
-
-}
-
-.incident_text{
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 100%;
-}
-
-.incident_title{
-    font-size: 30px;
-}
-
-.incident_sub_title{
-    font-size: 14px;
-}
-
-
-/* /////////////////////////// */
-
-
-/* Person */
-#person{
+/* Report */
+#report{
     background-color: hsl(0, 0%, 60%);
+    min-height: 1500px;
     height: 100vh;
     position: relative;
 }
 
-.person_img{
+.report_img{
 
 }
 
-.person_text{
-    text-align: center;
+.report_text{
+    text-align: left;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -120,148 +87,21 @@
     width: 100%;
 }
 
-.person_title{
+.report_title{
     font-size: 30px;
 }
 
-.person_sub_title{
+.report_sub_title{
     font-size: 14px;
 }
 
-
-/* /////////////////////////// */
-
-
-/* Vehicle */
-#vehicle{
-    background-color: hsl(0, 0%, 90%);
-    height: 100vh;
-    position: relative;
+.report_input{
+    color: #ff4b4b;
 }
 
-.vehicle_img{
-
-}
-
-.vehicle_text{
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 100%;
-}
-
-.vehicle_title{
-    font-size: 30px;
-}
-
-.vehicle_sub_title{
-    font-size: 14px;
-}
-
-
-/* /////////////////////////// */
-
-
-/* Property */
-#property{
-    background-color: hsl(0, 0%, 60%);
-    height: 100vh;
-    position: relative;
-}
-
-.property_img{
-
-}
-
-.property_text{
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 100%;
-}
-
-.property_title{
-    font-size: 30px;
-}
-
-.property_sub_title{
-    font-size: 14px;
-}
-
-
-/* /////////////////////////// */
-
-
-/* Modus Operandi */
-#modus_operandi{
-    background-color: hsl(0, 0%, 90%);
-    height: 100vh;
-    position: relative;
-}
-
-.modus_operandi_img{
-
-}
-
-.modus_operandi_text{
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 100%;
-}
-
-.modus_operandi_title{
-    font-size: 30px;
-}
-
-.modus_operandi_sub_title{
-    font-size: 14px;
-}
-
-
-/* /////////////////////////// */
-
-
-/* Narrative */
-#narrative{
-    background-color: hsl(0, 0%, 60%);
-    height: 100vh;
-    position: relative;
-}
-
-.narrative_img{
-
-}
-
-.narrative_text{
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 100%;
-}
-
-.narrative_title{
-    font-size: 30px;
-}
-
-.narrative_sub_title{
-    font-size: 14px;
+.report_num{
+    font-size: 38px;
+    margin-bottom: 50px;
 }
 
 
@@ -277,6 +117,7 @@
     flex-wrap: wrap;
     align-items: flex-end;
     padding: 30px 20px;
+    margin: auto;
 }
 
 .form_chunk * {
@@ -345,7 +186,7 @@ input[type=text], input[type=number], select, textarea {
 }
 
 @media screen and (min-width:980px){
-    .form_chunk{
+    .form_chunk, .report_text{
         min-width: 980px;
         max-width: 980px;
     }

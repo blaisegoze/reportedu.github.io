@@ -25,7 +25,7 @@
         </svg>
       </a>
       <ul class="nav_links">
-        <li><a href="/#incident">Reports</a></li>
+        <li><a href="/#report">Reports</a></li>
         <li><a href="/index.php">Create</a></li>
         <li><a href="/sign_in/sign_in_student.php">Sign Out</a></li>
       </ul>
@@ -49,201 +49,273 @@
   </div>
 
 
-<!-- Incident -->
-<div id="incident">
-  <div class="incident_img"></div>
-  <div class="incident_text">
-    <h1 class="incident_title">Report</h1>
-    <p class="incident_sub_title">...</p>
-    
-    <div class="form_chunk">
-      <div class="form_block">
-        <label for="message">Report num</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Author</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Report Date</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Report Time</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Nature of Call</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Location</label>
-      </div>
-      <div class="form_block">
-        <label for="message">City</label>
-      </div>
-      <div class="form_block">
-        <label for="message">State</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Zip Code</label>
-      </div>
-      <div class="form_block">
-        <label for="message">From Date</label>
-      </div>
-      <div class="form_block">
-        <label for="message">From Time</label>
-      </div>
-      <div class="form_block">
-        <label for="message">To Date</label>
-      </div>
-      <div class="form_block">
-        <label for="message">To Time</label>
-      </div>
-    </div>
-    <div class="form_chunk">
-      <div class="form_block_subs">
-        <label for="message">Name</label>
-      </div>
-      <div class="form_block">
-        <label for="message">SSN</label>
-      </div>
-      <div class="form_block">
-        <label for="message">DI of Travel</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Street Address</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Phone#</label>
-      </div>
-      <div class="form_block">
-        <label for="message">City</label>
-      </div>
-      <div class="form_block">
-        <label for="message">State</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Zip Code</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Date of Birth</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Race</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Sex</label>
-      <div class="form_block">
-        <label for="message">Height</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Weight</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Hair</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Eyes</label>
-      </div>
-    </div>
-    <div class="form_chunk">
-      <div class="form_block">
-        <label for="message">Involvement</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Driver's LIC. NO.</label>
-      </div>
-      <div class="form_block">
-        <label for="message">LIC. Year</label>
-      </div>
-      <div class="form_block">
-        <label for="message">State</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Vehicle Year</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Make</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Model</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Style</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Color</label>
-      </div>
-      <div class="form_block">
-        <label for="message">VIN</label>
-      </div>
-    </div>
-    <div class="form_chunk">
-      <div class="form_block">
-        <label for="message">Involvement</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Article</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Brand</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Model</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Serial Num</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Owner</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Value</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Description</label>
-      </div>
-    </div>
-    <div class="form_chunk">
-      <div class="form_block">
-        <div class="checkbox_div">
-          <input type="checkbox" id="gang_act" name="gang_act" value="gang_act">
-          <label for="gang_act">Gang Act</label>
+  <!-- Form Start -->
+  <form action="index_php.php" method="post">
+
+    <!-- Report -->
+    <div id="report">
+      <div class="report_img"></div>
+      <div class="report_text">
+        <h1 class="report_num">Report #:<span class="report_input"></span></h1>
+        <h1 class="report_title">Incident</h1>
+        <div class="form_chunk">
+            
+            <div class="form_block">
+              <label for="message">Author<span class="report_input"></span></label>
+              
+            </div>
+            <div class="form_block">
+              <label for="message">Report Date</label>
+             
+            </div>
+            <div class="form_block">
+              <label for="message">Report Time</label>
+            
+            </div>
+            <div class="form_block">
+              <label for="message">Nature of Call</label>
+           
+            </div>
+            <div class="form_block">
+              <label for="message">Location</label>
+           
+            </div>
+            <div class="form_block">
+              <label for="message">City</label>
+           
+            </div>
+            <div class="form_block">
+              <label for="message">State</label>
+          
+            </div>
+            <div class="form_block">
+              <label for="message">Zip Code</label>
+            
+            </div>
+            <div class="form_block">
+              <label for="message">From Date</label>
+           
+            </div>
+            <div class="form_block">
+              <label for="message">From Time</label>
+           
+            </div>
+            <div class="form_block">
+              <label for="message">To Date</label>
+           
+            </div>
+            <div class="form_block">
+              <label for="message">To Time</label>
+            
+            </div>
+        </div>
+        
+        <h1 class="nperso_title">Person</h1>
+        <div class="form_chunk">
+          <div class="form_block_subs">
+            <label for="message">Name</label>
+            <div class="form_block_sub">
+            
+            </div>
+          </div>
+          <div class="form_block">
+            <label for="message">SSN</label>
+            
+          </div>
+          <div class="form_block">
+            <label for="message">DI of Travel</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">Street Address</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">Phone#</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">City</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">State</label>
+          
+          </div>
+          <div class="form_block">
+            <label for="message">Zip Code</label>
+            
+          </div>
+          <div class="form_block">
+            <label for="message">Date of Birth</label>
+            
+          </div>
+          <div class="form_block">
+            <label for="message">Race</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">Sex</label>
+            
+          </div>
+          <div class="form_block">
+            <label for="message">Height</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">Weight</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">Hair</label>
+          
+          </div>
+          <div class="form_block">
+            <label for="message">Eyes</label>
+           
+          </div>
+        </div>
+
+        <h1 class="vehicle_title">Vehicle</h1>
+        <div class="form_chunk">
+          <div class="form_block">
+            <label for="message">Involvement</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">Driver's LIC. NO.</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">LIC. Year</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">State</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">Vehicle Year</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">Make</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">Model</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">Style</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">Color</label>
+           
+          </div>
+          <div class="form_block">
+            <label for="message">VIN</label>
+           
+          </div>
+        </div>
+
+        <h1 class="property_title">Property</h1>
+        <div class="form_chunk">
+        <div class="form_block">
+          <label for="message">Involvement</label>
+         
+        </div>
+        <div class="form_block">
+          <label for="message">Article</label>
+         
+        </div>
+        <div class="form_block">
+          <label for="message">Brand</label>
+       
+        </div>
+        <div class="form_block">
+          <label for="message">Model</label>
+        
+        </div>
+        <div class="form_block">
+          <label for="message">Serial Num</label>
+       
+        </div>
+        <div class="form_block">
+          <label for="message">Owner</label>
+        
+        </div>
+        <div class="form_block">
+          <label for="message">Value</label>
+      
+        </div>
+        <div class="form_block">
+          <label for="message">Description</label>
+          
         </div>
       </div>
-      <div class="form_block">
-        <label for="message">Means of Attack</label>
+
+      <h1 class="modus_operandi_title">Modus Operandi</h1>
+      <div class="form_chunk">
+        <div class="form_block">
+          <div class="checkbox_div">
+         
+            <label for="gang_act">Gang Act</label>
+          </div>
+        </div>
+        <div class="form_block">
+          <label for="message">Means of Attack</label>
+         
+        </div>
+        <div class="form_block">
+          <label for="message">Method of Entry</label>
+         
+        </div>
+        <div class="form_block">
+          <label for="message">Weapon Used</label>
+        
+        </div>
+        <div class="form_block">
+          <label for="message">Premis Type</label>
+        
+        </div>
+        <div class="form_block">
+          <label for="message">Number of Victims</label>
+         
+        </div>
+        <div class="form_block">
+          <label for="message">Victims Race</label>
+         
+        </div>
+        <div class="form_block">
+          <label for="message">Victims Sex</label>
+       
+        </div>
+        <div class="form_block">
+          <label for="message">Victims Age</label>
+         
+        </div>
       </div>
-      <div class="form_block">
-        <label for="message">Method of Entry</label>
+
+      <h1 class="narrative_title">Narrative</h1>
+      <div class="form_chunk">
+        <div class="form_block">
+          <label for="message">Summary</label>
+        
+        </div>
+        <div class="form_block">
+          <label for="message">Narrative</label>
+        
+        </div>
       </div>
-      <div class="form_block">
-        <label for="message">Weapon Used</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Premis Type</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Number of Victims</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Victims Race</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Victims Sex</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Victims Age</label>
+
       </div>
     </div>
-    <div class="form_chunk">
-      <div class="form_block">
-        <label for="message">Summary</label>
-      </div>
-      <div class="form_block">
-        <label for="message">Narrative</label>
-      </div>
-    </div>
-    
-  </div>
-</div>
+
+  <!-- Form End -->
+  </form>
+
 
   <!-- Footer -->
   <footer>
