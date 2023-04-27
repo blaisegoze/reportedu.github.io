@@ -68,6 +68,7 @@
 #incident{
     background-color: hsl(0, 0%, 90%);
     height: 100vh;
+    min-height: 900px;
     position: relative;
 }
 
@@ -102,6 +103,7 @@
 #person{
     background-color: hsl(0, 0%, 60%);
     height: 100vh;
+    min-height: 900px;
     position: relative;
 }
 
@@ -136,6 +138,7 @@
 #vehicle{
     background-color: hsl(0, 0%, 90%);
     height: 100vh;
+    min-height: 900px;
     position: relative;
 }
 
@@ -170,6 +173,7 @@
 #property{
     background-color: hsl(0, 0%, 60%);
     height: 100vh;
+    min-height: 900px;
     position: relative;
 }
 
@@ -204,6 +208,7 @@
 #modus_operandi{
     background-color: hsl(0, 0%, 90%);
     height: 100vh;
+    min-height: 900px;
     position: relative;
 }
 
@@ -238,6 +243,7 @@
 #narrative{
     background-color: hsl(0, 0%, 60%);
     height: 100vh;
+    min-height: 900px;
     position: relative;
 }
 
