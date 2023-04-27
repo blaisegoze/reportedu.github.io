@@ -57,7 +57,10 @@
     <p class="incident_sub_title">...</p>
     
     <div class="form_chunk">
-        
+        <div class="form_block">
+          <label for="message">Report num</label>
+          <input type="text" id="report_num" name="report_num" placeholder="report num" required>
+        </div>
         <div class="form_block">
           <label for="message">Author</label>
           <input type="text" id="author" name="author" placeholder="Author" required>
