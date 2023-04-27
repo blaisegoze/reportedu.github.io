@@ -73,12 +73,19 @@ button {
     margin-top: 50px;
     width: 100%;
     background-color: #ffffff;
-    color: #080710;
+    color: #3b3b3b;
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+button:hover {
+    background-color: #2f9ed1;
+    color: #ffffff;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .social {
@@ -120,4 +127,12 @@ button {
     margin: -20px 0;
     padding: 40px 0 10px 0;
     text-align: center;
+}
+
+.login_switch{
+    color: hsl(0,0%,70%);
+}
+
+.login_switch:hover{
+    color: hsl(0, 0%, 100%);
 }
