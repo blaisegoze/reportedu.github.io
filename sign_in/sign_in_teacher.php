@@ -16,7 +16,7 @@
     <div class="background">
         <form action="sign_in_php_teacher.php" method="post">
             <h3 class="sign_in_header">Teacher</h3>
-            <p class="sign_in_sub_header">or <a href="/sign_in/sign_in_student.php">Student</a></p>
+            <p class="sign_in_sub_header">or <a class="login_switch" href="/sign_in/sign_in_student.php">Student</a></p>
             <?php if(isset($_GET['error'])) { ?>
             <p class="error"> <?php echo $_GET["error"]; ?></p>
             <?php } ?>

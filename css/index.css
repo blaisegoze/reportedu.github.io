@@ -359,7 +359,7 @@
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], input[type=number], select, textarea {
+input[type=text], input[type=number], select[type=text], textarea {
     display: block;
     border: 1px solid #ccc;
     box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -375,21 +375,26 @@ input[type=text], input[type=number], select, textarea {
     font-size: 14px;
     font-weight: 300;
 }
+
+select[type=text] option{
+    color: hsl(0,0%,40%);
+}
   
   /* Style the submit button with a specific background color etc */
   .btn_submit {
-    background-color: #338fba;
+    background-color: #2c82aa;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin: 0 10px;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
   
   /* When moving the mouse over the submit button, add a darker green color */
   .btn_submit:hover {
-    background-color: #0071a5;
+    background-color: #2f9ed1;
 }
 
 @media screen and (min-width:980px){
