@@ -161,7 +161,7 @@
           </div>
           <div class="form_block">
             <label for="message">Sex: <span class="report_input"><?php echo $row['sex']; ?></span></label>
-            
+          </div>
         </div>
 
         <h1 class="vehicle_title">Vehicle</h1>
