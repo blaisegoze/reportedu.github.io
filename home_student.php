@@ -183,43 +183,43 @@
         <h1 class="vehicle_title">Vehicle</h1>
         <div class="form_chunk">
           <div class="form_block">
-            <label for="message">Involvement</label>
+            <label for="message">Involvement:<span><?php echo $row['involvement']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">Driver's LIC. NO.</label>
+            <label for="message">Driver's LIC. NO.: <span><?php echo $row['driver']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">LIC. Year</label>
+            <label for="message">LIC. Year: <span><?php echo $row['year']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">State</label>
+            <label for="message">State: <span><?php echo $row['veh_state']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">Vehicle Year</label>
+            <label for="message">Vehicle Year: <span><?php echo $row['veh_year']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">Make</label>
+            <label for="message">Make: <span><?php echo $row['make']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">Model</label>
+            <label for="message">Model: <span><?php echo $row['model_veh']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">Style</label>
+            <label for="message">Style: <span><?php echo $row['style']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">Color</label>
+            <label for="message">Color: <span><?php echo $row['color']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">VIN</label>
+            <label for="message">VIN: <span><?php echo $row['vin']; ?></span></label>
            
           </div>
         </div>
@@ -227,35 +227,35 @@
         <h1 class="property_title">Property</h1>
         <div class="form_chunk">
         <div class="form_block">
-          <label for="message">Involvement</label>
+          <label for="message">Involvement: <span><?php echo $row['involvement_prop']; ?></span></label>
          
         </div>
         <div class="form_block">
-          <label for="message">Article</label>
+          <label for="message">Article: <span><?php echo $row['article']; ?></span></label>
          
         </div>
         <div class="form_block">
-          <label for="message">Brand</label>
+          <label for="message">Brand: <span><?php echo $row['model_prop']; ?></span></label>
        
         </div>
         <div class="form_block">
-          <label for="message">Model</label>
+          <label for="message">Model: <span><?php echo $row['serial_num']; ?></span></label>
         
         </div>
         <div class="form_block">
-          <label for="message">Serial Num</label>
+          <label for="message">Serial Num: <span><?php echo $row['owner']; ?></span></label>
        
         </div>
         <div class="form_block">
-          <label for="message">Owner</label>
+          <label for="message">Owner: <span><?php echo $row['involvement']; ?></span></label>
         
         </div>
         <div class="form_block">
-          <label for="message">Value</label>
+          <label for="message">Value: <span><?php echo $row['value']; ?></span></label>
       
         </div>
         <div class="form_block">
-          <label for="message">Description</label>
+          <label for="message">Description: <span><?php echo $row['description']; ?></span></label>
           
         </div>
       </div>
@@ -264,40 +264,40 @@
       <div class="form_chunk">
         <div class="form_block">
           <div class="checkbox_div">
-         
-            <label for="gang_act">Gang Act</label>
+            <label for="gang_act">Gang Act: <span><?php echo $row['gang_act']; ?></span></label>
+
           </div>
         </div>
         <div class="form_block">
-          <label for="message">Means of Attack</label>
+          <label for="message">Means of Attack: <span><?php echo $row['attack']; ?></span></label>
          
         </div>
         <div class="form_block">
-          <label for="message">Method of Entry</label>
+          <label for="message">Method of Entry: <span><?php echo $row['entry']; ?></span></label>
          
         </div>
         <div class="form_block">
-          <label for="message">Weapon Used</label>
+          <label for="message">Weapon Used: <span><?php echo $row['weapon']; ?></span></label>
         
         </div>
         <div class="form_block">
-          <label for="message">Premis Type</label>
+          <label for="message">Premis Type: <span><?php echo $row['premis_type']; ?></span></label>
         
         </div>
         <div class="form_block">
-          <label for="message">Number of Victims</label>
+          <label for="message">Number of Victims: <span><?php echo $row['num_victims']; ?></span></label>
          
         </div>
         <div class="form_block">
-          <label for="message">Victims Race</label>
+          <label for="message">Victims Race: <span><?php echo $row['victims_race']; ?></span></label>
          
         </div>
         <div class="form_block">
-          <label for="message">Victims Sex</label>
+          <label for="message">Victims Sex: <span><?php echo $row['victims_sex']; ?></span></label>
        
         </div>
         <div class="form_block">
-          <label for="message">Victims Age</label>
+          <label for="message">Victims Age: <span><?php echo $row['victims_age']; ?></span></label>
          
         </div>
       </div>
@@ -305,11 +305,11 @@
       <h1 class="narrative_title">Narrative</h1>
       <div class="form_chunk">
         <div class="form_block">
-          <label for="message">Summary</label>
+          <label for="message">Summary: <span><?php echo $row['summary']; ?></span></label>
         
         </div>
         <div class="form_block">
-          <label for="message">Narrative</label>
+          <label for="message">Narrative: <span><?php echo $row['n_narrative']; ?></span></label>
         
           
         </div>
