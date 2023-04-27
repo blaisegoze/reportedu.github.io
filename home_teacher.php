@@ -14,7 +14,7 @@
 
 <body>
   <!-- Navigation Bar -->
-  <nav>
+  <nav class="nav_background">
     <div class="nav_content">
       <a class="logo" href="/home_teacher.php">
         <svg id="Layer_2" data-name="Layer 2" viewBox="0 0 265.21 282.26">
@@ -25,7 +25,7 @@
         </svg>
       </a>
       <ul class="nav_links">
-        <li><a href="/#incident">Reports</a></li>
+        <li><a href="/#report">Reports</a></li>
         <li><a href="/sign_in/sign_in_teacher.php">Sign Out</a></li>
       </ul>
       <div class="menu_burger">

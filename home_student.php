@@ -14,7 +14,7 @@
 
 <body>
   <!-- Navigation Bar -->
-  <nav>
+  <nav class="nav_background">
     <div class="nav_content">
       <a class="logo" href="/home_student.php">
         <svg id="Layer_2" data-name="Layer 2" viewBox="0 0 265.21 282.26">
