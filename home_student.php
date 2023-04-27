@@ -247,10 +247,8 @@
       <h1 class="modus_operandi_title">Modus Operandi</h1>
       <div class="form_chunk">
         <div class="form_block">
-          <div class="checkbox_div">
             <label for="gang_act">Gang Act: <span class="report_input"><?php echo $row['gang_act']; ?></span></label>
 
-          </div>
         </div>
         <div class="form_block">
           <label for="message">Means of Attack: <span class="report_input"><?php echo $row['attack']; ?></span></label>
