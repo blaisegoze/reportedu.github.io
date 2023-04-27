@@ -96,7 +96,7 @@
 }
 
 .report_input{
-    color: #ff4b4b;
+    color: #ff4b4b !important;
 }
 
 .report_num{
