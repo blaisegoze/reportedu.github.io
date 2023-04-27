@@ -60,56 +60,56 @@
     <div id="report">
       <div class="report_img"></div>
       <div class="report_text">
-        <h1 class="report_num">Report #:<span class="report_input"><?php echo $row['report_num']; ?></span></h1>
+        <h1 class="report_num">Report #: <span class="report_input">000<?php echo $row['report_num']; ?></span></h1>
         <h1 class="report_title">Incident</h1>
         <div class="form_chunk">
             
             <div class="form_block">
-              <label for="message">Author<span class="report_input"></span></label>
+              <label for="message">Author: <span class="report_input"><?php echo $row['author']; ?></span></label>
               
             </div>
             <div class="form_block">
-              <label for="message">Report Date</label>
+              <label for="message">Report Date: <span class="report_input"><?php echo $row['report_date']; ?></span></label>
              
             </div>
             <div class="form_block">
-              <label for="message">Report Time</label>
+              <label for="message">Report Time: <span class="report_input"><?php echo $row['report_time']; ?></span></label>
             
             </div>
             <div class="form_block">
-              <label for="message">Nature of Call</label>
+              <label for="message">Nature of Call: <span class="report_input"><?php echo $row['nat_call']; ?></span></label>
            
             </div>
             <div class="form_block">
-              <label for="message">Location</label>
+              <label for="message">Location: <span class="report_input"><?php echo $row['location']; ?></span></label>
            
             </div>
             <div class="form_block">
-              <label for="message">City</label>
+              <label for="message">City: <span class="report_input"><?php echo $row['inc_city']; ?></span></label>
            
             </div>
             <div class="form_block">
-              <label for="message">State</label>
+              <label for="message">State: <span class="report_input"><?php echo $row['inc_state']; ?></span></label>
           
             </div>
             <div class="form_block">
-              <label for="message">Zip Code</label>
+              <label for="message">Zip Code: <span class="report_input"><?php echo $row['inc_zip']; ?></span></label>
             
             </div>
             <div class="form_block">
-              <label for="message">From Date</label>
+              <label for="message">From Date: <span class="report_input"><?php echo $row['from_date']; ?></span></label>
            
             </div>
             <div class="form_block">
-              <label for="message">From Time</label>
+              <label for="message">From Time: <span class="report_input"><?php echo $row['from_time']; ?></span></label>
            
             </div>
             <div class="form_block">
-              <label for="message">To Date</label>
+              <label for="message">To Date: <span class="report_input"><?php echo $row['to_date']; ?></span></label>
            
             </div>
             <div class="form_block">
-              <label for="message">To Time</label>
+              <label for="message">To Time: <span class="report_input"><?php echo $row['to_time']; ?></span></label>
             
             </div>
         </div>
@@ -117,67 +117,51 @@
         <h1 class="nperso_title">Person</h1>
         <div class="form_chunk">
           <div class="form_block_subs">
-            <label for="message">Name</label>
-            <div class="form_block_sub">
+
+            <label for="message">Name: <span class="report_input"><?php echo $row['first_name']; ?><?php echo $row['middle_name']; ?><?php echo $row['last_name']; ?></span></label>
             
-            </div>
-          </div>
-          <div class="form_block">
-            <label for="message">SSN</label>
+            
             
           </div>
           <div class="form_block">
-            <label for="message">DI of Travel</label>
+            <label for="message">SSN: <span class="report_input"><?php echo $row['ssn']; ?></span></label>
+            
+          </div>
+          <div class="form_block">
+            <label for="message">DI of Travel: <span class="report_input"><?php echo $row['di_travel']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">Street Address</label>
+            <label for="message">Street Address: <span class="report_input"><?php echo $row['street_address']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">Phone#</label>
+            <label for="message">Phone#: <span class="report_input"><?php echo $row['phonenum']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">City</label>
+            <label for="message">City: <span class="report_input"><?php echo $row['pers_city']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">State</label>
+            <label for="message">State: <span class="report_input"><?php echo $row['pers_state']; ?></span></label>
           
           </div>
           <div class="form_block">
-            <label for="message">Zip Code</label>
+            <label for="message">Zip Code: <span class="report_input"><?php echo $row['pers_zip_code']; ?></span></label>
             
           </div>
           <div class="form_block">
-            <label for="message">Date of Birth</label>
+            <label for="message">Date of Birth: <span class="report_input"><?php echo $row['date_of_birth']; ?></span></label>
             
           </div>
           <div class="form_block">
-            <label for="message">Race</label>
+            <label for="message">Race: <span class="report_input"><?php echo $row['race']; ?></span></label>
            
           </div>
           <div class="form_block">
-            <label for="message">Sex</label>
+            <label for="message">Sex: <span class="report_input"><?php echo $row['sex']; ?></span></label>
             
-          </div>
-          <div class="form_block">
-            <label for="message">Height</label>
-           
-          </div>
-          <div class="form_block">
-            <label for="message">Weight</label>
-           
-          </div>
-          <div class="form_block">
-            <label for="message">Hair</label>
-          
-          </div>
-          <div class="form_block">
-            <label for="message">Eyes</label>
-           
-          </div>
         </div>
 
         <h1 class="vehicle_title">Vehicle</h1>
